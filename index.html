@@ -4,7 +4,7 @@
 
 <head>
   <style>
-    .link:hover { color: #00FF00; } /* CSS link hover (green) */
+    .link:hover { color:red; } /* CSS link hover (green) */
   </style>
 </head>
 
@@ -13,7 +13,7 @@
       <br>
       <br>
       <br>
-    <center><h1 style="font-family:verdana" id="header">Click <a class="link" onclick="reveal();confetti.start();" style="color:blue">here</a> to find out who your new School President is...</h1>
+    <center><h1 style="font-family:verdana" id="header">Click <div class="link" onclick="reveal();confetti.start();" style="color:blue">here</div> to find out who your new School President is...</h1>
      
       <br>
     <table style="border:0px"> <tr>
@@ -32,7 +32,7 @@
           window.setTimeout(reveal, 10)
         }
         else {
-          document.getElementById('header').innerHTML="Congratulations EUNAH"
+          document.getElementById('header').innerHTML="Congratulations Eunah!"
           document.getElementById('header').style="font-family:verdana;color:red"
         }
 
