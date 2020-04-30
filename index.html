@@ -14,15 +14,14 @@
      
       <br>
     <table style="border:0px"> <tr>
-      <td> <img src="Becky.jpg" id="Becky" height="450" width="300"> </td>
-      <td> <img src="Eunah.jpg" height="450" width="300"> </td>
-      <td> <img src="Kayla.jpg" id="Kayla" height="450" width="300"> </td>
+      <td> <img style="opacity:1.0" src="Becky.jpg" id="Becky" height="450" width="300"> </td>
+      <td> <img style="opacity:1.0" src="Eunah.jpg" height="450" width="300"> </td>
+      <td> <img style="opacity:1.0" src="Kayla.jpg" id="Kayla" height="450" width="300"> </td>
       </tr>
     </table>
     </center> 
     <script>
       function reveal() {
-        window.alert(document.getElementById('Becky').style.opacity)
         document.getElementById('Becky').style.opacity = Number(document.getElementById('Becky').style.opacity)-0.05
         document.getElementById('Kayla').style.opacity = Number(document.getElementById('Kayla').style.opacity)-0.05
         var opacity = Number(document.getElementById('Kayla').style.opacity)
