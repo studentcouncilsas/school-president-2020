@@ -13,7 +13,7 @@
       <br>
       <br>
       <br>
-    <center><h1 style="font-family:verdana" id="header">Click <div class="link" onclick="reveal();confetti.start();" style="color:blue">here</div> to find out who your new School President is...</h1>
+    <center><h1 style="font-family:verdana" id="header">Click <div class="link" onclick="reveal();confetti.start();startMusic();" style="color:blue">here</div> to find out who your new School President is...</h1>
      
       <br>
     <table style="border:0px"> <tr>
@@ -36,6 +36,10 @@
           document.getElementById('header').style="font-family:verdana;color:red"
         }
 
+      }
+      function startMusic() {
+        var audio = new Audio('audio.mp3');
+        audio.play():
       }
        
     </script>
