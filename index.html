@@ -22,9 +22,9 @@
     </center> 
     <script>
       function reveal() {
-        document.getElementById('Becky').style.opacity = document.getElementById('Becky').style.opacity-0.05
-        document.getElementById('Kayla').style.opacity = document.getElementById('Kayla').style.opacity-0.05
-        var opacity = document.getElementById('Kayla').style.opacity
+        document.getElementById('Becky').style.opacity = Number(document.getElementById('Becky').style.opacity)-0.05
+        document.getElementById('Kayla').style.opacity = Number(document.getElementById('Kayla').style.opacity)-0.05
+        var opacity = Number(document.getElementById('Kayla').style.opacity)
         if (opacity>0) {
           window.setTimeout(reveal, 100)
         }
